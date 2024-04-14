@@ -1,0 +1,258 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/CN
+vand1bit
+Z1 !s110 1713120847
+!i10b 1
+!s100 96VDW4@miPJZYbECBhgFk3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IIBaIj^TJbGO1fNVW]OHAO1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1713114415
+Z5 8and.v
+Z6 Fand.v
+!i122 0
+L0 11 9
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1713120847.000000
+!s107 RCA-decrease.v|RCA.v|testBenches.v.|logicalshifter.v|arithmeticshifter.v|and.v|OR.v|
+Z9 !s90 -reportprogress|300|OR.v|and.v|arithmeticshifter.v|logicalshifter.v|testBenches.v.|RCA.v|RCA-decrease.v|
+!i113 1
+Z10 tCvgOpt 0
+vandnr
+R1
+!i10b 1
+!s100 GMiGTF]d^PLfnKeTd0fB`1
+R2
+IZW>gB<Dzbj2:3Eg^MaH120
+R3
+R0
+R4
+R5
+R6
+!i122 0
+Z11 L0 1 9
+R7
+r1
+!s85 0
+31
+R8
+Z12 !s107 RCA-decrease.v|RCA.v|testBenches.v.|logicalshifter.v|arithmeticshifter.v|and.v|OR.v|
+R9
+!i113 1
+R10
+varithmeticshifter
+R1
+!i10b 1
+!s100 ;8g1TaJGY]9S?G[fGF4iN3
+R2
+Id8Jj=MMzVj4cKlh`NBII=3
+R3
+R0
+w1713120180
+8arithmeticshifter.v
+Farithmeticshifter.v
+!i122 0
+Z13 L0 2 19
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 1
+R10
+vFAC
+R1
+!i10b 1
+!s100 Cl1D:oFe7c;:Xgnm[WG0g3
+R2
+Ia2hil42c2@V^0RcTniJZe3
+R3
+R0
+Z14 w1713118822
+Z15 8RCA.v
+Z16 FRCA.v
+!i122 0
+L0 1 12
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 1
+R10
+n@f@a@c
+vFACD
+R1
+!i10b 1
+!s100 3J>4D?_C29SO9@:37G7VE2
+R2
+IPRHlSndeHH>34<D2P^T0`2
+R3
+R0
+Z17 w1713119123
+Z18 8RCA-decrease.v
+Z19 FRCA-decrease.v
+!i122 0
+L0 2 12
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 1
+R10
+n@f@a@c@d
+vlogicalshifter
+R1
+!i10b 1
+!s100 b;2z[@D?oQkPDPiBiBB`b0
+R2
+I7MCNM72moAgUGMlgo6WF30
+R3
+R0
+w1713120074
+8logicalshifter.v
+Flogicalshifter.v
+!i122 0
+R13
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 1
+R10
+vor1bit
+R1
+!i10b 1
+!s100 ;6GF;f4K@TAOLXXjRLAF<3
+R2
+ITAH22i_RFiH:e:kjD]DkT1
+R3
+R0
+Z20 w1713114372
+Z21 8OR.v
+Z22 FOR.v
+!i122 0
+L0 12 9
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 1
+R10
+vornr
+R1
+!i10b 1
+!s100 1oELF=8Q2dfO6Vl?KJEX[1
+R2
+IO8CZ6;JR4e4ZHKejX15aB1
+R3
+R0
+R20
+R21
+R22
+!i122 0
+R11
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 1
+R10
+vRCA
+R1
+!i10b 1
+!s100 9?AbiCBo:N5^>N2h4Ad5@1
+R2
+IAofM<4aQ70^_VbX`HjIgN0
+R3
+R0
+R14
+R15
+R16
+!i122 0
+Z23 L0 15 20
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 1
+R10
+n@r@c@a
+vRCAD
+R1
+!i10b 1
+!s100 4L2U0X6OOe[_Q4Jn=]43z3
+R2
+IMREK7B7zA@l5dl186h1TN1
+R3
+R0
+R17
+R18
+R19
+!i122 0
+R23
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 1
+R10
+n@r@c@a@d
+vRCAD_tb
+R1
+!i10b 1
+!s100 glhJR1MN4C9=LPKCNmKFL2
+R2
+Im_TfdUC6jL>8IVf59gfZc0
+R3
+R0
+w1713120843
+8testBenches.v.
+FtestBenches.v.
+!i122 0
+L0 230 30
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 1
+R10
+n@r@c@a@d_tb
