@@ -1,8 +1,8 @@
 # add all Verilog source files, separated by spaces
-set sourcefiles {OR.v and.v arithmeticshifter.v logicalshifter.v testBenches.v. RCA.v RCA-decrease.v}
+set sourcefiles {OR.v and.v arithmeticshifter.v logicalshifter.v testBenches.v. RCA.v RCA-decrease.v booth.v}
 
 # set name of the top module
-set topmodule RCAD_tb
+set topmodule iiitb_r2_4bit_bm_tb
 
 ###################################################
 #####DO NOT MODIFY THE SCRIPT BELLOW THIS LINE#####

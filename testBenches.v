@@ -1,3 +1,4 @@
+
 /*
 module or_tb;
 reg clk, rst;
@@ -225,7 +226,7 @@ reg clk, rst;
     end
 endmodule
 
-*/
+
 
 module RCAD_tb;
 reg clk, rst;
@@ -258,3 +259,131 @@ reg clk, rst;
 
 endmodule
 
+
+module booth_tb;
+    reg clk, rst, ld;
+    reg [15:0] A;
+    reg [15:0] B;
+    wire [31:0] out;
+    wire cnt;
+
+    booth uut(.clk(clk), .rst(rst), .ld(ld), .Q(A), .M(B), .P(out), .cntout(cnt));
+
+    initial begin
+        $dumpfile("design.vcd");
+        $dumpvars(0,booth_tb );
+        $monitor( $time, " Q = %b, M = %b, P = %b, COUT = %b" , B, A, out, cnt);
+    end
+
+    initial begin
+        // Initialize Inputs
+        clk = 0;
+        ld = 1;
+        #1 rst = 1'b1;
+        #1 ld = 1'b0;
+        #1 rst = 1'b0;
+        A = 23;
+        B = 456;            
+        #1 ld = 1'b0;  
+        repeat (95) #10 clk = ~clk;
+        #150 $finish;
+    end
+endmodule
+
+
+module booth_tb;
+
+	// Inputs
+	reg clk;
+	reg load;
+	reg reset;
+	reg [15:0] M;
+	reg [15:0] Q;
+
+	// Outputs
+	wire [31:0] P;
+
+	// Instantiate the Design Under Test (DUT)
+	 booth dut (
+		.clk(clk), 
+		.ld(load), 
+		.rst(reset), 
+		.M(M), 
+		.Q(Q), 
+		.P(P)
+	);
+	
+	always
+		#10 clk = ~clk;
+  
+  initial 
+    begin
+      	$dumpfile("design.vcd");
+        $dumpvars(0,booth_tb );
+      	$monitor ( $time, " Q = %b, M = %b, P = %b", Q, M, P);
+    end
+	
+	initial begin
+		// Initialize Inputs
+		clk  	= 0;
+		load 	= 0;
+		reset 	= 1'b1;
+		M 		= 4'b1010;
+		Q 		= 4'b1011;
+		#20;
+		load  	= 1;
+		reset 	= 1'b0;
+		#20;
+		load 	= 0;
+		#300 $finish;
+
+	end  
+endmodule
+
+*/
+
+module booth_tb;
+
+	reg clk;
+	reg load;
+	reg reset;
+	reg [15:0] M;
+	reg [15:0] Q;
+
+	wire [31:0] P;
+
+	 booth uut (
+		.clk(clk), 
+		.load(load), 
+		.reset(reset), 
+		.M(M), 
+		.Q(Q), 
+		.P(P)
+	);
+	
+	always
+		#10 clk = ~clk;
+  
+  initial 
+    begin
+      	$dumpfile("design.vcd");
+        $dumpvars(0,iiitb_r2_4bit_bm_tb );
+      	$monitor ( $time, " Q = %d, M = %d, P = %d, Q_t = %b, Q-1 = %b, A = %b, CNT = %b", Q, M, P, dut.Q_temp, dut.Q_minus_one, dut.A, dut.cnt);
+    end
+	
+	initial begin
+		clk = 0;
+		load = 0;
+		reset = 1'b1;
+		M = 931;
+		Q = 788;
+		#20;
+		load = 1;
+		reset = 1'b0;
+		#20;
+		load = 0;
+		#500 $finish;
+
+	end
+      
+endmodule

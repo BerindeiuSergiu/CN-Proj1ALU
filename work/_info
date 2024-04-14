@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dE:/CN
 vand1bit
-Z1 !s110 1713120847
+Z1 !s110 1713132430
 !i10b 1
 !s100 96VDW4@miPJZYbECBhgFk3
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -26,9 +26,9 @@ Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1713120847.000000
-!s107 RCA-decrease.v|RCA.v|testBenches.v.|logicalshifter.v|arithmeticshifter.v|and.v|OR.v|
-Z9 !s90 -reportprogress|300|OR.v|and.v|arithmeticshifter.v|logicalshifter.v|testBenches.v.|RCA.v|RCA-decrease.v|
+Z8 !s108 1713132430.000000
+!s107 booth.v|RCA-decrease.v|RCA.v|testBenches.v.|logicalshifter.v|arithmeticshifter.v|and.v|OR.v|
+Z9 !s90 -reportprogress|300|OR.v|and.v|arithmeticshifter.v|logicalshifter.v|testBenches.v.|RCA.v|RCA-decrease.v|booth.v|
 !i113 1
 Z10 tCvgOpt 0
 vandnr
@@ -49,7 +49,7 @@ r1
 !s85 0
 31
 R8
-Z12 !s107 RCA-decrease.v|RCA.v|testBenches.v.|logicalshifter.v|arithmeticshifter.v|and.v|OR.v|
+Z12 !s107 booth.v|RCA-decrease.v|RCA.v|testBenches.v.|logicalshifter.v|arithmeticshifter.v|and.v|OR.v|
 R9
 !i113 1
 R10
@@ -106,7 +106,7 @@ R2
 IPRHlSndeHH>34<D2P^T0`2
 R3
 R0
-Z17 w1713119123
+Z17 w1713121276
 Z18 8RCA-decrease.v
 Z19 FRCA-decrease.v
 !i122 0
@@ -121,6 +121,50 @@ R9
 !i113 1
 R10
 n@f@a@c@d
+viiitb_r2_4bit_bm
+R1
+!i10b 1
+!s100 fDJhZ495`T`zNEbVB]1BF1
+R2
+IVSk??[J<@IIE^H_iRj6@z2
+R3
+R0
+w1713132274
+8booth.v
+Fbooth.v
+!i122 0
+L0 1 64
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 1
+R10
+viiitb_r2_4bit_bm_tb
+R1
+!i10b 1
+!s100 NbzfoXU;``H7AOofLVZzN2
+R2
+Ia^`@f>D^ncOQSDzOjdG]B2
+R3
+R0
+w1713132427
+8testBenches.v.
+FtestBenches.v.
+!i122 0
+L0 345 49
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 1
+R10
 vlogicalshifter
 R1
 !i10b 1
@@ -233,26 +277,3 @@ R9
 !i113 1
 R10
 n@r@c@a@d
-vRCAD_tb
-R1
-!i10b 1
-!s100 glhJR1MN4C9=LPKCNmKFL2
-R2
-Im_TfdUC6jL>8IVf59gfZc0
-R3
-R0
-w1713120843
-8testBenches.v.
-FtestBenches.v.
-!i122 0
-L0 230 30
-R7
-r1
-!s85 0
-31
-R8
-R12
-R9
-!i113 1
-R10
-n@r@c@a@d_tb
