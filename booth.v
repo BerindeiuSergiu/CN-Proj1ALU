@@ -7,11 +7,11 @@ module booth(
 
     );
 	 
-	 reg [15:0] A 		=  15'b0;
-	 reg Q_minus_one 	=  0;
-	 reg [15:0] Q_temp 	=  15'b0;
-	 reg [15:0] M_temp 	=  15'b0;
-	 reg [4:0] cnt 	= 0;
+	 reg [15:0] A = 15'b0;
+	 reg Q_minus_one = 0;
+	 reg [15:0] Q_temp = 15'b0;
+	 reg [15:0] M_temp = 15'b0;
+	 reg [4:0] cnt = 0;
 	 
 	 
 	 
@@ -20,7 +20,7 @@ module booth(
 		if (reset == 1)
 		begin
 			A = 15'b0;		//reset values
-			Q_minus_one =  0;
+			Q_minus_one = 0;
 			P = 31'b0;
 			Q_temp = 15'b0;
 			M_temp = 15'b0;
