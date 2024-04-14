@@ -1,0 +1,452 @@
+$date
+	Mon Apr 15 01:05:08 2024
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module iiitb_r2_4bit_bm_tb $end
+$var reg 1 ! clk $end
+$var reg 1 " load $end
+$var reg 1 # reset $end
+$var reg 16 $ M [15:0] $end
+$var reg 16 % Q [15:0] $end
+$var wire 1 & P [31] $end
+$var wire 1 ' P [30] $end
+$var wire 1 ( P [29] $end
+$var wire 1 ) P [28] $end
+$var wire 1 * P [27] $end
+$var wire 1 + P [26] $end
+$var wire 1 , P [25] $end
+$var wire 1 - P [24] $end
+$var wire 1 . P [23] $end
+$var wire 1 / P [22] $end
+$var wire 1 0 P [21] $end
+$var wire 1 1 P [20] $end
+$var wire 1 2 P [19] $end
+$var wire 1 3 P [18] $end
+$var wire 1 4 P [17] $end
+$var wire 1 5 P [16] $end
+$var wire 1 6 P [15] $end
+$var wire 1 7 P [14] $end
+$var wire 1 8 P [13] $end
+$var wire 1 9 P [12] $end
+$var wire 1 : P [11] $end
+$var wire 1 ; P [10] $end
+$var wire 1 < P [9] $end
+$var wire 1 = P [8] $end
+$var wire 1 > P [7] $end
+$var wire 1 ? P [6] $end
+$var wire 1 @ P [5] $end
+$var wire 1 A P [4] $end
+$var wire 1 B P [3] $end
+$var wire 1 C P [2] $end
+$var wire 1 D P [1] $end
+$var wire 1 E P [0] $end
+
+$scope module dut $end
+$var wire 1 F clk $end
+$var wire 1 G load $end
+$var wire 1 H reset $end
+$var wire 1 I M [15] $end
+$var wire 1 J M [14] $end
+$var wire 1 K M [13] $end
+$var wire 1 L M [12] $end
+$var wire 1 M M [11] $end
+$var wire 1 N M [10] $end
+$var wire 1 O M [9] $end
+$var wire 1 P M [8] $end
+$var wire 1 Q M [7] $end
+$var wire 1 R M [6] $end
+$var wire 1 S M [5] $end
+$var wire 1 T M [4] $end
+$var wire 1 U M [3] $end
+$var wire 1 V M [2] $end
+$var wire 1 W M [1] $end
+$var wire 1 X M [0] $end
+$var wire 1 Y Q [15] $end
+$var wire 1 Z Q [14] $end
+$var wire 1 [ Q [13] $end
+$var wire 1 \ Q [12] $end
+$var wire 1 ] Q [11] $end
+$var wire 1 ^ Q [10] $end
+$var wire 1 _ Q [9] $end
+$var wire 1 ` Q [8] $end
+$var wire 1 a Q [7] $end
+$var wire 1 b Q [6] $end
+$var wire 1 c Q [5] $end
+$var wire 1 d Q [4] $end
+$var wire 1 e Q [3] $end
+$var wire 1 f Q [2] $end
+$var wire 1 g Q [1] $end
+$var wire 1 h Q [0] $end
+$var reg 32 i P [31:0] $end
+$var reg 16 j A [15:0] $end
+$var reg 1 k Q_minus_one $end
+$var reg 16 l Q_temp [15:0] $end
+$var reg 16 m M_temp [15:0] $end
+$var reg 5 n cnt [4:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+1#
+b1110100011 $
+b1100010100 %
+bx i
+b0 j
+0k
+b0 l
+b0 m
+b0 n
+xE
+xD
+xC
+xB
+xA
+x@
+x?
+x>
+x=
+x<
+x;
+x:
+x9
+x8
+x7
+x6
+x5
+x4
+x3
+x2
+x1
+x0
+x/
+x.
+x-
+x,
+x+
+x*
+x)
+x(
+x'
+x&
+0h
+0g
+1f
+0e
+1d
+0c
+0b
+0a
+1`
+1_
+0^
+0]
+0\
+0[
+0Z
+0Y
+1X
+1W
+0V
+0U
+0T
+1S
+0R
+1Q
+1P
+1O
+0N
+0M
+0L
+0K
+0J
+0I
+1H
+0G
+0F
+$end
+#10000
+1!
+1F
+b0 i
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+#20000
+1"
+0#
+0!
+1G
+0H
+0F
+#30000
+1!
+1F
+b1100010100 l
+b1110100011 m
+b1100010100 i
+1C
+1A
+1=
+1<
+#40000
+0"
+0!
+0G
+0F
+#50000
+1!
+1F
+b110001010 l
+b1 n
+b110001010 i
+1D
+0C
+1B
+0A
+1>
+0<
+#60000
+0!
+0F
+#70000
+1!
+1F
+b11000101 l
+b10 n
+b11000101 i
+1E
+0D
+1C
+0B
+1?
+0=
+#80000
+0!
+0F
+#90000
+1!
+1F
+b1111110001011101 j
+1k
+b1000000001100010 l
+b1111111000101110 j
+b11 n
+b11111110001011101000000001100010 i
+0E
+1D
+0C
+1@
+0>
+16
+14
+13
+12
+10
+1,
+1+
+1*
+1)
+1(
+1'
+1&
+#100000
+0!
+0F
+#110000
+1!
+1F
+b111010001 j
+0k
+b1100000000110001 l
+b11101000 j
+b100 n
+b111010001100000000110001 i
+1E
+0D
+1A
+0?
+17
+04
+03
+1/
+1.
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+#120000
+0!
+0F
+#130000
+1!
+1F
+b1111110101000101 j
+1k
+b1110000000011000 l
+b1111111010100010 j
+b101 n
+b11111110101000101110000000011000 i
+0E
+1B
+0@
+18
+14
+02
+0/
+1,
+1+
+1*
+1)
+1(
+1'
+1&
+#140000
+0!
+0F
+#150000
+1!
+1F
+b1001000101 j
+0k
+b1111000000001100 l
+b100100010 j
+b110 n
+b1001000101111000000001100 i
+1C
+0A
+19
+0.
+1-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+#160000
+0!
+0F
+#170000
+1!
+1F
+b111100000000110 l
+b10010001 j
+b111 n
+b100100010111100000000110 i
+1D
+0B
+1:
+06
+15
+04
+11
+00
+1.
+0-
+#180000
+0!
+0F
+#190000
+1!
+1F
+b1011110000000011 l
+b1001000 j
+b1000 n
+b10010001011110000000011 i
+1E
+0C
+1;
+07
+16
+05
+12
+01
+1/
+0.
+#200000
+0!
+0F
+#210000
+1!
+1F
+b1111110010100101 j
+1k
+b1101111000000001 l
+b1111111001010010 j
+b1001 n
+b11111110010100101101111000000001 i
+0D
+1<
+08
+17
+14
+02
+11
+1,
+1+
+1*
+1)
+1(
+1'
+1&
+#220000
+0!
+0F
+#230000
+1!
+1F
+b110111100000000 l
+b1111111100101001 j
+b1010 n
+b11111111001010010110111100000000 i
+0E
+1=
+09
+18
+06
+15
+04
+12
+01
