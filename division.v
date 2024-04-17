@@ -12,18 +12,22 @@ module division (
     reg [15:0] B;
     reg [15:0] R;
     reg [4:0] count;
+    reg lda = 1;
 
-    always @(posedge clk) begin
-        if (rst == 1) begin
+
+    always @(posedge clk, negedge rst) begin
+        if (rst ) begin
             R = 16'b0;     // Reset values
             B = 16'b0;
             AQ = 32'b0;
             count = 0;
-        end else if (ld) begin
+            lda = 1;
+        end else if (lda) begin
             R = 0;
             AQ = {16'b0 , a}; // Load AQ with dividend 'a'
             B = b;           // Load divisor 'b'
             count = 0;
+            lda = 0;
         end 
             else if (AQ[31] == 1'b1 && (count < 16)) begin
                 AQ = AQ << 1;

@@ -1,5 +1,4 @@
 
-/*
 module or_tb;
 reg clk, rst;
     reg [15:0] A;
@@ -219,17 +218,17 @@ reg clk, rst;
     end
 
     initial begin
-    A = 7;
-    B = 3; 
+    A = 447;
+    B = 38; 
 
-    #1 $display("\n%b\n%b\n%b", A, B, out);
+    #1 $display("\n%b\n%b\n%d", A, B, out);
     end
 endmodule
 
 
 
 module RCAD_tb;
-reg clk, rst;
+reg clk, rst, ld;
     reg [15:0] A;
     reg [15:0] B;
     wire cout;
@@ -249,12 +248,10 @@ reg clk, rst;
     end
 
     initial begin
-    for(i = 0; i < 15; i = i + 1) begin
-        A = i+5;
-        B = i+1; 
+        A = 447;
+        B = 38; 
         #1 $display("\n%b\n%b\n%b", A, B, out);
         end 
-    end
 
 
 endmodule
@@ -286,7 +283,7 @@ module booth_tb;
     begin
       	$dumpfile("design.vcd");
         $dumpvars(0,booth_tb );
-      	$monitor ( $time, " Q = %d, M = %d, P = %d", Q, M, P);
+      	$monitor ( $time, " Q = %b, M = %b, P = %b, cnt = %d              A = %b , Q_temp = %b",  Q, M, P, uut.cnt, uut.A, uut.Q_temp);
     end
 	
 	initial begin
@@ -300,12 +297,15 @@ module booth_tb;
 		reset = 1'b0;
 		#20;
 		load = 0;
-		#600 $finish;
+		#500
+		M = 442;
+		Q = 131;
+        #1200 $finish;
 
 	end
       
 endmodule
-*/
+
 
 module division_tb;
 
@@ -346,7 +346,71 @@ module division_tb;
     end
 
     initial begin
-        $monitor("Divisor: %b, Dividend: %b, Remainder: %d, Result: %d, AQ: %b, R=%b,  Count:%d", divisor, dividend, remainder, result, uut.AQ, uut.R, uut.count);
+        $monitor("Divisor: %b, Dividend: %b, Remainder: %d, Result: %d, AQ: %b, R=%b,  Count:%d", divisor, dividend, remainder, result, uut.AQ, uut.R, uut.R);
+    end
+
+endmodule
+
+
+
+
+
+module alu_tb;
+
+    reg clk, rst;
+    reg [15:0] A, B;
+    reg [3:0] select;
+    wire [15:0] result;
+
+    ALU xd(.clk(clk), .rst(rst), .A(A), .B(B), .select(select), .result(result));
+
+    localparam ClOCKCYCLES=500;
+    localparam CLKPERIOD=10;
+
+    initial begin
+        clk = 0;
+        repeat(ClOCKCYCLES*2) #(CLKPERIOD/2) clk = ~clk;
+    end
+
+    integer i;
+
+    initial begin
+        A = 447;
+        B = 38;
+        rst = 1;
+        #10 rst = 0;
+        select = 4'b0;
+        for(i = 0; i < 11; i = i + 1) begin
+            select = i;
+            #(CLKPERIOD * 15) $display("A = %d A = %b | B = %d B = %b | Result = %d Result %b | Operation : %b", A, A, B, B, result, result, select);
+        end
+        $display("\n");
+        
+        A = 194;
+        B = 69;
+        rst = 1;
+        #10 rst = 0;
+        select = 4'b0;
+        for(i = 0; i < 11; i = i + 1) begin
+            #10
+            select = i;
+            #(CLKPERIOD * 15) $display("A = %d A = %b | B = %d B = %b | Result = %d Result %b | Operation : %b", A, A, B, B, result, result, select);
+        end
+        $display("\n");
+
+        A = 268;
+        B = 33;
+        rst = 1;
+        #10 rst = ~rst;
+        select = 4'b0;
+        #10
+        for(i = 0; i < 11; i = i + 1) begin
+            #10
+            select = i;
+            #(CLKPERIOD * 15) $display("A = %d A = %b | B = %d B = %b | Result = %d Result %b | Operation : %b", A, A, B, B, result, result, select);
+        end
+        $display("\n");
+
     end
 
 endmodule

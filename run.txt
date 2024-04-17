@@ -1,8 +1,8 @@
 # add all Verilog source files, separated by spaces
-set sourcefiles {OR.v and.v arithmeticshifter.v logicalshifter.v testBenches.v. RCA.v RCA-decrease.v booth.v division.v}
+set sourcefiles {OR.v and.v arithmeticshifter.v logicalshifter.v testBenches.v. RCA.v RCA-decrease.v booth.v division.v alu.v xor.v}
 
 # set name of the top module
-set topmodule division_tb
+set topmodule alu_tb 
 
 ###################################################
 #####DO NOT MODIFY THE SCRIPT BELLOW THIS LINE#####

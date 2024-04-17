@@ -9,28 +9,117 @@ z2
 !i10f 100
 cModel Technology
 Z0 dE:/CN
-vand1bit
-Z1 !s110 1713385869
+vALU
+Z1 !s110 1713393756
 !i10b 1
-!s100 96VDW4@miPJZYbECBhgFk3
+!s100 dzI:RP[`7I9_i`hB2FzSh0
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IIBaIj^TJbGO1fNVW]OHAO1
+I=i^:oYf@^BOFK2Zd:N@G^1
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z4 w1713114415
-Z5 8and.v
-Z6 Fand.v
+w1713393592
+8alu.v
+Falu.v
 !i122 0
-L0 11 9
-Z7 OV;L;2020.1;71
+L0 1 46
+Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1713385869.000000
-!s107 Srt2.v|booth.v|RCA-decrease.v|RCA.v|testBenches.v.|logicalshifter.v|arithmeticshifter.v|and.v|OR.v|
-Z9 !s90 -reportprogress|300|OR.v|and.v|arithmeticshifter.v|logicalshifter.v|testBenches.v.|RCA.v|RCA-decrease.v|booth.v|Srt2.v|
+Z5 !s108 1713393756.000000
+!s107 xor.v|alu.v|division.v|booth.v|RCA-decrease.v|RCA.v|testBenches.v.|logicalshifter.v|arithmeticshifter.v|and.v|OR.v|
+Z6 !s90 -reportprogress|300|OR.v|and.v|arithmeticshifter.v|logicalshifter.v|testBenches.v.|RCA.v|RCA-decrease.v|booth.v|division.v|alu.v|xor.v|
 !i113 1
-Z10 tCvgOpt 0
+Z7 tCvgOpt 0
+n@a@l@u
+valu_tb
+R1
+!i10b 1
+!s100 c10fhVd@<TZndO1eP<[DH2
+R2
+IeFRfa:YD@A8le_KYF:KjB0
+R3
+R0
+Z8 w1713393700
+Z9 8testBenches.v.
+Z10 FtestBenches.v.
+!i122 0
+L0 358 59
+R4
+r1
+!s85 0
+31
+R5
+Z11 !s107 xor.v|alu.v|division.v|booth.v|RCA-decrease.v|RCA.v|testBenches.v.|logicalshifter.v|arithmeticshifter.v|and.v|OR.v|
+R6
+!i113 1
+R7
+vand1bit
+R1
+!i10b 1
+!s100 96VDW4@miPJZYbECBhgFk3
+R2
+IIBaIj^TJbGO1fNVW]OHAO1
+R3
+R0
+Z12 w1713114415
+Z13 8and.v
+Z14 Fand.v
+!i122 0
+L0 11 9
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 1
+R7
+vand1bit_tb
+R1
+!i10b 1
+!s100 ckHzIf@T^cg1=onXTUFmo0
+R2
+IP15O9]DI`=b15?^RVdn:h1
+R3
+R0
+R8
+R9
+R10
+!i122 0
+L0 84 26
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 1
+R7
+vand_tb
+R1
+!i10b 1
+!s100 _YX<Rn`:mKn]No>G;=OQC0
+R2
+IlcganK;BfNBm^CRJGKb<U3
+R3
+R0
+R8
+R9
+R10
+!i122 0
+L0 57 26
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 1
+R7
 vandnr
 R1
 !i10b 1
@@ -39,108 +128,152 @@ R2
 IZW>gB<Dzbj2:3Eg^MaH120
 R3
 R0
-R4
-R5
-R6
+R12
+R13
+R14
 !i122 0
-Z11 L0 1 9
-R7
+Z15 L0 1 9
+R4
 r1
 !s85 0
 31
-R8
-Z12 !s107 Srt2.v|booth.v|RCA-decrease.v|RCA.v|testBenches.v.|logicalshifter.v|arithmeticshifter.v|and.v|OR.v|
-R9
+R5
+R11
+R6
 !i113 1
-R10
+R7
 varithmeticshifter
 R1
 !i10b 1
-!s100 ;8g1TaJGY]9S?G[fGF4iN3
+!s100 eU^4N[;Z0:IPO=SRjC18G0
 R2
-Id8Jj=MMzVj4cKlh`NBII=3
+IU_SQ_^Xk9cdVGb4fQ<S4A2
 R3
 R0
-w1713120180
+w1713389471
 8arithmeticshifter.v
 Farithmeticshifter.v
 !i122 0
-Z13 L0 2 19
-R7
+L0 2 17
+R4
 r1
 !s85 0
 31
-R8
-R12
-R9
+R5
+R11
+R6
 !i113 1
+R7
+varithmeticshifter_tb
+R1
+!i10b 1
+!s100 GA]Zl9hA<U6`bE=0LHaGZ0
+R2
+IGY>5j8^8jznzaXc=Zo]082
+R3
+R0
+R8
+R9
 R10
+!i122 0
+L0 141 29
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 1
+R7
 vbooth
 R1
 !i10b 1
-!s100 hDiQk?jB8;Q>`z=>Z17nP0
+!s100 dCWaiPVe3mKRjzAORVfUo3
 R2
-ISUKQiZFD^hh;3UnfijCX50
+I;dn7L>=a9HchAcKf3jnU23
 R3
 R0
-w1713376692
+w1713393573
 8booth.v
 Fbooth.v
 !i122 0
-L0 1 64
-R7
+L0 1 65
+R4
 r1
 !s85 0
 31
-R8
-R12
-R9
+R5
+R11
+R6
 !i113 1
+R7
+vbooth_tb
+R1
+!i10b 1
+!s100 DHd=PzX@EEe6iR;bCQJO>1
+R2
+IKZZPj_DmTa=i[KV8Tk;Gi3
+R3
+R0
+R8
+R9
 R10
+!i122 0
+L0 260 48
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 1
+R7
 vdivision
 R1
 !i10b 1
-!s100 56heoDShRnniLSfn=MYQ^0
+!s100 ^_]]z:i]SQzW3;BzfG<Yl1
 R2
-I3BFdOH_]`Zc;zOF@k1^N83
+I_HHg8iob:hcl:VTk[Uk562
 R3
 R0
-w1713385820
-8Srt2.v
-FSrt2.v
+w1713393752
+8division.v
+Fdivision.v
 !i122 0
-L0 122 55
-R7
+L0 1 59
+R4
 r1
 !s85 0
 31
-R8
-R12
-R9
+R5
+R11
+R6
 !i113 1
-R10
+R7
 vdivision_tb
 R1
 !i10b 1
-!s100 KkX2Knj_oeV5bmCe>U7A]2
+!s100 0L?^;5YK9k4XLTcDhao812
 R2
-I412PBUkXR:e54:Ag:CIOQ0
+I:<YG@5GTbVJYNPhV=_2kV2
 R3
 R0
-w1713385864
-8testBenches.v.
-FtestBenches.v.
+R8
+R9
+R10
 !i122 0
-L0 342 43
-R7
+L0 310 43
+R4
 r1
 !s85 0
 31
-R8
-R12
-R9
+R5
+R11
+R6
 !i113 1
-R10
+R7
 vFAC
 R1
 !i10b 1
@@ -149,20 +282,20 @@ R2
 Ia2hil42c2@V^0RcTniJZe3
 R3
 R0
-Z14 w1713118822
-Z15 8RCA.v
-Z16 FRCA.v
+Z16 w1713118822
+Z17 8RCA.v
+Z18 FRCA.v
 !i122 0
-Z17 L0 1 12
-R7
+Z19 L0 1 12
+R4
 r1
 !s85 0
 31
-R8
-R12
-R9
+R5
+R11
+R6
 !i113 1
-R10
+R7
 n@f@a@c
 vFACD
 R1
@@ -172,43 +305,65 @@ R2
 IGl6Y?LVFEHAM3ej6e_H<52
 R3
 R0
-Z18 w1713376712
-Z19 8RCA-decrease.v
-Z20 FRCA-decrease.v
+Z20 w1713390367
+Z21 8RCA-decrease.v
+Z22 FRCA-decrease.v
 !i122 0
-R17
-R7
+R19
+R4
 r1
 !s85 0
 31
-R8
-R12
-R9
+R5
+R11
+R6
 !i113 1
-R10
+R7
 n@f@a@c@d
 vlogicalshifter
 R1
 !i10b 1
-!s100 b;2z[@D?oQkPDPiBiBB`b0
+!s100 EeU8=ZeA^VkfI3O>QE[d_2
 R2
-I7MCNM72moAgUGMlgo6WF30
+I@7@DM53[VdlNOUDj@X?4G1
 R3
 R0
-w1713120074
+w1713389479
 8logicalshifter.v
 Flogicalshifter.v
 !i122 0
-R13
-R7
+L0 2 19
+R4
 r1
 !s85 0
 31
-R8
-R12
-R9
+R5
+R11
+R6
 !i113 1
+R7
+vlogicalshifter_tb
+R1
+!i10b 1
+!s100 b:1nO6e[QelBDGOWlk:ZO3
+R2
+IzRO43b0l>dJ=8D?5ad^kY2
+R3
+R0
+R8
+R9
 R10
+!i122 0
+L0 111 29
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 1
+R7
 vor1bit
 R1
 !i10b 1
@@ -217,20 +372,64 @@ R2
 ITAH22i_RFiH:e:kjD]DkT1
 R3
 R0
-Z21 w1713114372
-Z22 8OR.v
-Z23 FOR.v
+Z23 w1713114372
+Z24 8OR.v
+Z25 FOR.v
 !i122 0
 L0 12 9
-R7
+R4
 r1
 !s85 0
 31
-R8
-R12
-R9
+R5
+R11
+R6
 !i113 1
+R7
+vor1bit_tb
+R1
+!i10b 1
+!s100 [7hj1FJHSD0:HUdl]n_@A0
+R2
+IL7k1VZN5aCBQHj^[GHL0>2
+R3
+R0
+R8
+R9
 R10
+!i122 0
+L0 30 26
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 1
+R7
+vor_tb
+R1
+!i10b 1
+!s100 Xibi^aaL`eJ<lLT]B=o3Z3
+R2
+IGHZ@Ac73ET8L3gaSA3VK]3
+R3
+R0
+R8
+R9
+R10
+!i122 0
+L0 2 26
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 1
+R7
 vornr
 R1
 !i10b 1
@@ -239,20 +438,20 @@ R2
 IO8CZ6;JR4e4ZHKejX15aB1
 R3
 R0
-R21
-R22
 R23
+R24
+R25
 !i122 0
-R11
-R7
+R15
+R4
 r1
 !s85 0
 31
-R8
-R12
-R9
+R5
+R11
+R6
 !i113 1
-R10
+R7
 vRCA
 R1
 !i10b 1
@@ -261,21 +460,44 @@ R2
 IAofM<4aQ70^_VbX`HjIgN0
 R3
 R0
-R14
-R15
 R16
+R17
+R18
 !i122 0
 L0 15 20
-R7
+R4
 r1
 !s85 0
 31
-R8
-R12
-R9
+R5
+R11
+R6
 !i113 1
-R10
+R7
 n@r@c@a
+vRCA_tb
+R1
+!i10b 1
+!s100 `2zn[Ual7G31OBjNSIGFK0
+R2
+IzC3gN3=TWd]ZK93zW]f6>1
+R3
+R0
+R8
+R9
+R10
+!i122 0
+L0 200 27
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 1
+R7
+n@r@c@a_tb
 vRCAD
 R1
 !i10b 1
@@ -284,18 +506,85 @@ R2
 I6Bc48P^B::VB@OXMle=[Y2
 R3
 R0
-R18
-R19
 R20
+R21
+R22
 !i122 0
 L0 14 20
-R7
+R4
 r1
 !s85 0
 31
-R8
-R12
-R9
+R5
+R11
+R6
 !i113 1
-R10
+R7
 n@r@c@a@d
+vRCAD_tb
+R1
+!i10b 1
+!s100 @YGMz@NlZzTgPV`he<nkY0
+R2
+IR^1f=cD2^UYmLc4LFeX_72
+R3
+R0
+R8
+R9
+R10
+!i122 0
+L0 230 28
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 1
+R7
+n@r@c@a@d_tb
+vxor1
+R1
+!i10b 1
+!s100 TH1z0]N=egg1D=TUU?]UC3
+R2
+ICTRoSSPPd9059n`0j@bdf3
+R3
+R0
+w1713114712
+8xor.v
+Fxor.v
+!i122 0
+L0 1 10
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 1
+R7
+vxor_tb
+R1
+!i10b 1
+!s100 kaUWK8c`h>57cIOJ5nha_2
+R2
+I8=`G50<N^TJI:Z9[Q4:b`3
+R3
+R0
+R8
+R9
+R10
+!i122 0
+L0 172 26
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 1
+R7

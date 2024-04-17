@@ -6,9 +6,9 @@ module logicalshifter(
     output reg [15:0] outputreg
 );
 
-always @(posedge clk, negedge rst)
+always @(posedge clk)
     begin
-        if(!rst)
+        if(rst == 1)
             outputreg <= 0;
         else if(s == 2'b01)
             outputreg <= {1'b0, inputreg[15:1]};
