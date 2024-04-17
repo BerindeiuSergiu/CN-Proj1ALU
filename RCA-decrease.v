@@ -1,4 +1,3 @@
-
 module FACD(
     input x,
     input y,

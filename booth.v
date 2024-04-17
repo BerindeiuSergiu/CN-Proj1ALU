@@ -45,7 +45,7 @@ module booth(
 		begin
 			A = A + M_temp;
 			Q_minus_one = Q_temp[0];
-			Q_temp = {A[0],Q_temp[15:1]};				// right shift Q
+			Q_temp = {A[0],Q_temp[15:1]};			// right shift Q
 			A = {A[15],A[15:1]};					// right shift A
 			cnt = cnt + 1'b1;
 		end

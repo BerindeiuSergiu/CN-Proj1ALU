@@ -1,5 +1,5 @@
 $date
-	Mon Apr 15 01:07:14 2024
+	Wed Apr 17 21:03:56 2024
 $end
 $version
 	ModelSim Version 2020.1
@@ -8,7 +8,7 @@ $timescale
 	1ps
 $end
 
-$scope module iiitb_r2_4bit_bm_tb $end
+$scope module booth_tb $end
 $var reg 1 ! clk $end
 $var reg 1 " load $end
 $var reg 1 # reset $end
@@ -47,7 +47,7 @@ $var wire 1 C P [2] $end
 $var wire 1 D P [1] $end
 $var wire 1 E P [0] $end
 
-$scope module dut $end
+$scope module uut $end
 $var wire 1 F clk $end
 $var wire 1 G load $end
 $var wire 1 H reset $end
@@ -633,5 +633,35 @@ b10110011000110111100 i
 0!
 0F
 #530
+1!
+1F
+#540
+0!
+0F
+#550
+1!
+1F
+#560
+0!
+0F
+#570
+1!
+1F
+#580
+0!
+0F
+#590
+1!
+1F
+#600
+0!
+0F
+#610
+1!
+1F
+#620
+0!
+0F
+#630
 1!
 1F

@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dE:/CN
 vand1bit
-Z1 !s110 1713132430
+Z1 !s110 1713385869
 !i10b 1
 !s100 96VDW4@miPJZYbECBhgFk3
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -26,9 +26,9 @@ Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1713132430.000000
-!s107 booth.v|RCA-decrease.v|RCA.v|testBenches.v.|logicalshifter.v|arithmeticshifter.v|and.v|OR.v|
-Z9 !s90 -reportprogress|300|OR.v|and.v|arithmeticshifter.v|logicalshifter.v|testBenches.v.|RCA.v|RCA-decrease.v|booth.v|
+Z8 !s108 1713385869.000000
+!s107 Srt2.v|booth.v|RCA-decrease.v|RCA.v|testBenches.v.|logicalshifter.v|arithmeticshifter.v|and.v|OR.v|
+Z9 !s90 -reportprogress|300|OR.v|and.v|arithmeticshifter.v|logicalshifter.v|testBenches.v.|RCA.v|RCA-decrease.v|booth.v|Srt2.v|
 !i113 1
 Z10 tCvgOpt 0
 vandnr
@@ -49,7 +49,7 @@ r1
 !s85 0
 31
 R8
-Z12 !s107 booth.v|RCA-decrease.v|RCA.v|testBenches.v.|logicalshifter.v|arithmeticshifter.v|and.v|OR.v|
+Z12 !s107 Srt2.v|booth.v|RCA-decrease.v|RCA.v|testBenches.v.|logicalshifter.v|arithmeticshifter.v|and.v|OR.v|
 R9
 !i113 1
 R10
@@ -75,61 +75,15 @@ R12
 R9
 !i113 1
 R10
-vFAC
+vbooth
 R1
 !i10b 1
-!s100 Cl1D:oFe7c;:Xgnm[WG0g3
+!s100 hDiQk?jB8;Q>`z=>Z17nP0
 R2
-Ia2hil42c2@V^0RcTniJZe3
+ISUKQiZFD^hh;3UnfijCX50
 R3
 R0
-Z14 w1713118822
-Z15 8RCA.v
-Z16 FRCA.v
-!i122 0
-L0 1 12
-R7
-r1
-!s85 0
-31
-R8
-R12
-R9
-!i113 1
-R10
-n@f@a@c
-vFACD
-R1
-!i10b 1
-!s100 3J>4D?_C29SO9@:37G7VE2
-R2
-IPRHlSndeHH>34<D2P^T0`2
-R3
-R0
-Z17 w1713121276
-Z18 8RCA-decrease.v
-Z19 FRCA-decrease.v
-!i122 0
-L0 2 12
-R7
-r1
-!s85 0
-31
-R8
-R12
-R9
-!i113 1
-R10
-n@f@a@c@d
-viiitb_r2_4bit_bm
-R1
-!i10b 1
-!s100 fDJhZ495`T`zNEbVB]1BF1
-R2
-IVSk??[J<@IIE^H_iRj6@z2
-R3
-R0
-w1713132274
+w1713376692
 8booth.v
 Fbooth.v
 !i122 0
@@ -143,19 +97,19 @@ R12
 R9
 !i113 1
 R10
-viiitb_r2_4bit_bm_tb
+vdivision
 R1
 !i10b 1
-!s100 NbzfoXU;``H7AOofLVZzN2
+!s100 56heoDShRnniLSfn=MYQ^0
 R2
-Ia^`@f>D^ncOQSDzOjdG]B2
+I3BFdOH_]`Zc;zOF@k1^N83
 R3
 R0
-w1713132427
-8testBenches.v.
-FtestBenches.v.
+w1713385820
+8Srt2.v
+FSrt2.v
 !i122 0
-L0 345 49
+L0 122 55
 R7
 r1
 !s85 0
@@ -165,6 +119,74 @@ R12
 R9
 !i113 1
 R10
+vdivision_tb
+R1
+!i10b 1
+!s100 KkX2Knj_oeV5bmCe>U7A]2
+R2
+I412PBUkXR:e54:Ag:CIOQ0
+R3
+R0
+w1713385864
+8testBenches.v.
+FtestBenches.v.
+!i122 0
+L0 342 43
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 1
+R10
+vFAC
+R1
+!i10b 1
+!s100 Cl1D:oFe7c;:Xgnm[WG0g3
+R2
+Ia2hil42c2@V^0RcTniJZe3
+R3
+R0
+Z14 w1713118822
+Z15 8RCA.v
+Z16 FRCA.v
+!i122 0
+Z17 L0 1 12
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 1
+R10
+n@f@a@c
+vFACD
+R1
+!i10b 1
+!s100 H:d^101lGKBk:d[FGijEJ0
+R2
+IGl6Y?LVFEHAM3ej6e_H<52
+R3
+R0
+Z18 w1713376712
+Z19 8RCA-decrease.v
+Z20 FRCA-decrease.v
+!i122 0
+R17
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 1
+R10
+n@f@a@c@d
 vlogicalshifter
 R1
 !i10b 1
@@ -195,9 +217,9 @@ R2
 ITAH22i_RFiH:e:kjD]DkT1
 R3
 R0
-Z20 w1713114372
-Z21 8OR.v
-Z22 FOR.v
+Z21 w1713114372
+Z22 8OR.v
+Z23 FOR.v
 !i122 0
 L0 12 9
 R7
@@ -217,9 +239,9 @@ R2
 IO8CZ6;JR4e4ZHKejX15aB1
 R3
 R0
-R20
 R21
 R22
+R23
 !i122 0
 R11
 R7
@@ -243,7 +265,7 @@ R14
 R15
 R16
 !i122 0
-Z23 L0 15 20
+L0 15 20
 R7
 r1
 !s85 0
@@ -257,16 +279,16 @@ n@r@c@a
 vRCAD
 R1
 !i10b 1
-!s100 4L2U0X6OOe[_Q4Jn=]43z3
+!s100 [`]z02@`G:2^25g`DgJ6]3
 R2
-IMREK7B7zA@l5dl186h1TN1
+I6Bc48P^B::VB@OXMle=[Y2
 R3
 R0
-R17
 R18
 R19
+R20
 !i122 0
-R23
+L0 14 20
 R7
 r1
 !s85 0
