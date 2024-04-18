@@ -5,7 +5,6 @@ module FACD(
     output z,
     output cout
 );
-
 assign z = x ^ y ^ cin;
 assign cout = (x & (~y)) | (x & cin) | ((~y) & cin);
 

@@ -16,16 +16,16 @@ module division (
 
 
     always @(posedge clk, negedge rst) begin
-        if (rst ) begin
-            R = 16'b0;     // Reset values
+        if (rst ) begin //resetarea valorilor
+            R = 16'b0;
             B = 16'b0;
             AQ = 32'b0;
             count = 0;
             lda = 1;
-        end else if (lda) begin
+        end else if (lda) begin // incarcarea registriilor
             R = 0;
-            AQ = {16'b0 , a}; // Load AQ with dividend 'a'
-            B = b;           // Load divisor 'b'
+            AQ = {16'b0 , a}; 
+            B = b;         
             count = 0;
             lda = 0;
         end 
@@ -37,7 +37,7 @@ module division (
                 begin 
                     AQ[0] = 0;
                 end else AQ[0] = 1;
-                count = count + 1;           // Decrement count
+                count = count + 1;
             end
             else if (AQ[31] == 1'b0 && (count < 16)) begin // Check if first two bits of AQ are '01'
                 AQ = AQ << 1;
@@ -46,8 +46,8 @@ module division (
                 if(R[15] == 1'b1)
                 begin 
                     AQ[0] = 0;
-                end else AQ[0] = 1;            // Increment R by 1
-                count = count + 1;             // Decrement count
+                end else AQ[0] = 1;     
+                count = count + 1;
             end
 
     end
